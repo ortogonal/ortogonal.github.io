@@ -100,4 +100,11 @@ Indentation matters. Be sure the indent of the code block aligns with the first 
 
 An example of a Gist embed below.
 
+```cpp
+void main() {
+    int a = 10;
+    std::cout << "Hello world!" << std::endl;
+}
+```
+
 {% gist mmistakes/6589546 %}
