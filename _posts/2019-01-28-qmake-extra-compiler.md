@@ -48,7 +48,7 @@ cg.commands = \
     $$OUT_PWD/../code-generator/bin/cg -s -o $$OUT_PWD/generated -r ${QMAKE_FILE_IN}
 QMAKE_EXTRA_COMPILERS += cg
 
-DISTFILES += PROTOCOLS
+DISTFILES += CG_INPUT
 ```
 Let's look what the code above does. `cg.name` just sets a name on the extra compiler we are adding. `cg.input = CG_INPUT` tells the extra compiler what its input are, in this case our XML-files (fileA.xml and fileB.xml). 
 
