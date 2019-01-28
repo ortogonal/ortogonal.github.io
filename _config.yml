@@ -1,5 +1,5 @@
 title:            Embedded bits and pixels
-description:      My blog, my thoughs, my programming. Mainly C++, Qt and Embedded Linux.
+description:      My blog, my thoughts, my programming. Mainly C++, Qt and Embedded Linux.
 disqus_shortname: ortogonal
 reading_time:     true
 words_per_minute: 200
@@ -11,8 +11,8 @@ url:
 owner:
   name:           Erik Larsson
   avatar:         avatar.jpg
-  bio:            "I'm a software developer that focus on Embedded Linux. Mostly C/C++ and Qt programming."
-  email:          karl.erik.larsson@gmail.com
+  bio:            "I'm a software developer that focus on Embedded Linux. Mostly C/C++ and Qt programming. This blog will contain my thoughts about programming and how I use different things in my every day life."
+  #email:          karl.erik.larsson@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        erik_larsson79
   facebook:       erik.larsson.7106
