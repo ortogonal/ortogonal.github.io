@@ -20,7 +20,7 @@ I've been searching the web for a simple solution to add ccache into a `qmake`-b
 ```cpp
 QMAKE_CXX = ccache $$QMAKE_CXX
 ```
-Put that in your `.pro`-file and `ccache` will sort of work. But since version 5.9.2 of Qt there is a much simpler solution. Tor Arne Vestbø make a [commit](https://github.com/qt/qtbase/commit/d64940891dffcb951f4b76426490cbc94fb4aba7) that simplifies this alot.
+Put that in your `.pro`-file and `ccache` will sort of work. But since version 5.9.2 of Qt there is a much simpler solution. Tor Arne Vestbø made a nice [commit](https://github.com/qt/qtbase/commit/d64940891dffcb951f4b76426490cbc94fb4aba7) that simplifies this alot.
 
 To use this feature you either add `load(ccache)` into your `.pro`-file or add `CONFIG+=ccache` to your `qmake` command line.
 
@@ -33,4 +33,4 @@ Unfortunately the `ccache` feature in qmake doesn't check whether you have `ccac
 One can configure `ccache` in many different ways. The default config (on Ubuntu 18.04) seems to be a maximum cache size of 5 GB. This can easily be changed. More information can be found [here](https://ccache.samba.org/manual/latest.html).
 
 # Build Qt with `ccache`
-The commit I mentioned above also add support for `ccache` into the Qt5 build. This is something that can be useful to and for sure will fill your cache :).
+The commit I mentioned above also add support for `ccache` into the Qt5 build. This is something that will speed up your build and also fill your chache :).
