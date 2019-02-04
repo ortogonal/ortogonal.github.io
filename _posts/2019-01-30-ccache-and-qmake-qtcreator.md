@@ -18,6 +18,7 @@ image:
 # Integrating `ccache` into your build
 I've been searching the web for a simple solution to add ccache into a `qmake`-based project with out any real luck. I found some solutions were people have done some minor hacks like:
 ```cpp
+# TLDR? No there are better ways...
 QMAKE_CXX = ccache $$QMAKE_CXX
 ```
 Put that in your `.pro`-file and `ccache` will sort of work. But since version 5.9.2 of Qt there is a much simpler solution. Tor Arne Vestbø made a nice [commit](https://github.com/qt/qtbase/commit/d64940891dffcb951f4b76426490cbc94fb4aba7) that simplifies this alot.
