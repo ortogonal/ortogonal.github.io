@@ -1,7 +1,7 @@
 ---
 layout: post-index
-title: Latest Posts
-description: "Describe this nonsense."
+title: Home
+description: "Post about embedded linux, Qt, bits and pixels."
 tags: [Jekyll, theme, themes, responsive, blog, modern]
 comments: false
 image:
@@ -35,6 +35,11 @@ image:
   </header>
   <div class="entry-content">
     {{ post.content }}
+      <footer class="entry-meta">
+        {% if page.modified %}<span>Updated on <span class="entry-date date published updated"><time datetime="{{ page.modified }}">{{ page.modified | date: "%B %d, %Y" }}</time></span></span>
+        <span class="author vcard"><span class="fn">{{ site.owner.name }}</span></span>{% endif %}
+        {% if page.share != false %}{% include social-share.html %}{% endif %}
+      </footer>
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 {% endfor %}

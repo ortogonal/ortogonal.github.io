@@ -2,7 +2,7 @@
 layout: post
 title: "Integrate Clang-Tidy into CMake"
 description: "Clang-Tidy is a really great tool that does static code analysis on your code. To be honest I've become a much better C++ developer thanks to Clang-Tidy. So how can this be integrated into CMake."
-tags: [qt, qmake, qtcreator]
+tags: [cmake, clang-tidy, Better C++]
 modified: 2019-02-06
 image:
   path: /images/abstract-8.jpg
