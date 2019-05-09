@@ -35,3 +35,8 @@ One can configure `ccache` in many different ways. The default config (on Ubuntu
 
 # Build Qt with `ccache`
 The commit I mentioned above also add support for `ccache` into the Qt5 build. This is something that will speed up your build and also fill your chache :).
+
+### Update
+Thanks to Cristian Adam for pointing out that this isn't working on Windows. You see, I don't own a Windows computer and I hope I never will... But still a big thanks for pointing it out.
+
+To run it on Windows with MinGW you need to pass `QMAKE_CXX=ccache g++` when compiling.
