@@ -44,6 +44,11 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-feed
+
+feed:
+  categories:
+    - qt
+
 sass:
   sass_dir: _sass
   style: compressed
