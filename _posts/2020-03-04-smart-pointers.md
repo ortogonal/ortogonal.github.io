@@ -15,7 +15,7 @@ This is new - I tried to push some code the our git server and the company porn 
 ```cpp
 ObjectType *type = new ObjectType();
 ```
-The porn filters now a days are so sophisticated that the can find naked pointer! Wow!
+The porn filters now a days are so sophisticated that the can find naked pointers! Wow!
 
 ## No that did not happen - it's just a start of the article
 But one thing that happen was that I realize that many still uses naked pointer in C++. Why? Well maybe simply because they don't know of `std::unique_ptr<>`, `std::shared_ptr<>` and `std::weak_ptr<>` (not covered in this article)?
