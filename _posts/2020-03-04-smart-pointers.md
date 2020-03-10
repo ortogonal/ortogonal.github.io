@@ -6,8 +6,8 @@ tags: [c++, cpp, modern c++]
 category: cpp
 modified: 2020-03-10
 image:
-  path: /images/cpp-smart-pointers-header.png
-  feature: cpp-smart-pointers-header.png
+  path: /images/cpp-smart-pointers-header-2.png
+  feature: cpp-smart-pointers-header-2.png
 ---
 
 
