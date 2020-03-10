@@ -3,6 +3,7 @@ layout: post
 title: "Bidirectional layouts in QML"
 description: "Implement bidrectional layout (or layout mirroring) in QML"
 tags: [qt, qml]
+category: qt
 modified: 2019-11-09
 image:
   path: /images/abstract-8.jpg

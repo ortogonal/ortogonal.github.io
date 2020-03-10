@@ -48,7 +48,7 @@ plugins:
 feed:
   categories:
     - qt
-
+    - qml
 sass:
   sass_dir: _sass
   style: compressed
