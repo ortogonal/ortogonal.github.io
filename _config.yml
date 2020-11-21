@@ -70,6 +70,7 @@ kramdown:
 
 include: 
   - .htaccess
+  - extra-css
 exclude: 
   - "*.less"
   - "*.sublime-project"
