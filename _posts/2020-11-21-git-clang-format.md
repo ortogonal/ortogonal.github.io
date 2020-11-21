@@ -33,10 +33,10 @@ void test(QString&data, bool extraString) {
 
 To format your code run:
 
-{% terminal %}
+```bash
 $ clang-format -i mysource.cpp
 $
-{% endterminal %}
+```
 
 After running `clang-format` we get this
 ```cpp
@@ -105,8 +105,7 @@ fi
 
 The above is really nice. Instead of just printing "Format error" this is what I have done in my script to make hacking funnier.
 
-{% terminal %}
-
+```bash
 $ git commit
 ______ ______________  ___  ___ _____ 
 |  ___|  _  | ___ \  \/  | / _ \_   _|
@@ -125,8 +124,7 @@ ______ ______________  ___  ___ _____
 The new code that is added contains differences 
 against clang-format rules. Please fix it before
 doing a commit!
-
-{% endterminal %}
+```
 
 A pre-commit in `git` is a nice thing to have to make formatting easier. But remember that it can be by-passed using `--no-verify` when calling `git commit`.
 
@@ -147,10 +145,10 @@ This is something `git filter-branch` can do for you.
 #### Example
 We have a branch called `feature/this-is-it`. It has 10 commit on top of the `master`-branch. To do all the steps above simple run.
 
-{% terminal %}
+```bash
 $ export FIRST_COMMIT=$(git rev-list --ancestry-path origin/master..HEAD | tail -n 1)
 $ git filter-branch --tree-filter 'git-clang-format --extensions h,cpp $FIRST_COMMIT^' -- $FIRST_COMMIT..HEAD
-{% endterminal %}
+```
 
 The above example will fetch your `FRIST_COMMIT` from where the `origin/master` is (can be any other branch or commit). The second line will run `git filter-branch` and for each commit run `git-clang-format` and run clang-format over all changes from your `FRIST_COMMIT` and the store that change. The result is a branch where you keep your history but have nicely formatted code!
 
