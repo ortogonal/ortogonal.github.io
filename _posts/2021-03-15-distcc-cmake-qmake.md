@@ -14,7 +14,7 @@ image:
 Sometimes smart ideas takes time. But maybe using distcc from now on will catch up some of the lost time.
 It's a bit embarrassing that it took me one year before I thought about setting up `distcc`, even though I perfectly new what it was!
 
-I've been working from home the last year due to Covid-19. I also have a Linux-server in the basement - just because it's fun. I use that server more or less for *nothing*. But it still fun to have - for *nothing*. Then the other day it just came to be.
+I've been working from home the last year due to Covid-19. I also have a Linux-server in the basement - just because it's fun. I use that server more or less for *nothing*. But it still fun to have - for *nothing*. Then the other day it just came to me.
 
 > Why not use that server to speed-up my builds!
 
